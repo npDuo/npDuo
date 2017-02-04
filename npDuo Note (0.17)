@@ -1352,6 +1352,8 @@ wg5 = {
 };
 wg5[jl[933]]();
 
+/* Give lingot fast */
+
 function inject(f) { //Inject the script into the document
 	var script;
 	script = document.createElement('script');
@@ -1413,7 +1415,7 @@ function f($) {
 	}
 
 	var lover = function(id, root) {
-		var love = parseInt(prompt("Bạn muốn tặng bao nhiêu Lingot?", "1"));
+		var love = parseInt(prompt("Bạn muốn tặng bao nhiêu lingots?", "1"));
 		if (love > 0 && (love <= 10 || confirm("Bạn chắc chắn muốn tặng " + love + " lingots chứ?")))
 			set_interval_limited(id, root, love, 200);
 		return false;
@@ -1465,6 +1467,9 @@ function f($) {
 	});
 }
 
+
+/* Write on your wall */
+
 function inject(f) { //Inject the script into the document
 	var script;
 	script = document.createElement('script');
@@ -1481,7 +1486,7 @@ function f($) {
 			"ru" : "Оставить запись",
 			"uk" : "Залишити запис"
 		},
-		"Đăng" : {
+		"Gửi" : {
 			"ru" : "Отправить",
 			"uk" : "Опублікувати"
 		}
@@ -1498,7 +1503,7 @@ function f($) {
 				if (!el.find("#stream-post").length) {
 					var s = '<li class="stream-item">';
 					s += '<a href="#" class="avatar avatar-medium"><span class="icon-comment-medium" /></a>';
-					s += '<span class="stream-item-type default"></span><ul class="stream-item-comment-list" style="margin-top: -10px;"><li><div class="post-activity stream-item-comment-new"><div class="col-input"><textarea id="stream-post" style="" class="post textarea-white textarea-block textarea-autogrow" placeholder="' + tr('Viết gì đó...') + '" dir="auto"></textarea></div><div class="col-btn"><button id="stream-post-btn" class="btn btn-green" disabled="disabled">' + tr('Đăng') + '</button></div></div></li></ul></li>';
+					s += '<span class="stream-item-type default"></span><ul class="stream-item-comment-list" style="margin-top: -10px;"><li><div class="post-activity stream-item-comment-new"><div class="col-input"><textarea id="stream-post" style="" class="post textarea-white textarea-block textarea-autogrow" placeholder="' + tr('Viết gì đó...') + '" dir="auto"></textarea></div><div class="col-btn"><button id="stream-post-btn" class="btn btn-green" disabled="disabled">' + tr('Gửi') + '</button></div></div></li></ul></li>';
 					el.prepend(s);
 				}
 			}
