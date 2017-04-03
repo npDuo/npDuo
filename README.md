@@ -18,7 +18,7 @@ With Opera - [Tampermonkey](https://addons.opera.com/ru/extensions/details/tampe
 
 + Choose Dashboard.
 
-+ Add this source: https://github.com/nguoilapro/npDuo/blob/master/npDuo%20Mix%20(0.16.1)
++ Add source
 
 ____________________________
 
