@@ -1,0 +1,75 @@
+// ==UserScript==
+// @name           npDuo Blog
+// @namespace		duolingo
+// @description		Viết lên tường tường chính mình | Phiên bản Note (0.17) | Offical
+// @version			Note (0.17)
+// @author			nguoilapro | nguoilapro@gmail.com
+// @include			https://www.duolingo.com/*
+// @grant			none
+// ==/UserScript==
+
+function inject(f) { //Inject the script into the document
+	var script;
+	script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.setAttribute('name', 'duoblog');
+	script.textContent = '(' + f.toString() + ')(jQuery)';
+	document.head.appendChild(script);
+}
+inject(f);
+
+function f($) {
+	var trs = {
+		"Viết gì đó..." : {
+			"ru" : "Оставить запись",
+			"uk" : "Залишити запис"
+		},
+		"Đăng" : {
+			"ru" : "Отправить",
+			"uk" : "Опублікувати"
+		}
+	};
+	function tr(t) {
+		if (duo.user !== undefined && duo.user.attributes.ui_language !== undefined && trs[t] !== undefined && trs[t][duo.user.attributes.ui_language] != undefined)
+			return trs[t][duo.user.attributes.ui_language];
+		return t;
+	}
+
+	function show_form() {
+			var el = $("#stream-container .activity-stream");
+			if (el.length) {
+				if (!el.find("#stream-post").length) {
+					var s = '<li class="stream-item">';
+					s += '<a href="#" class="avatar avatar-medium"><span class="icon-comment-medium" /></a>';
+					s += '<span class="stream-item-type default"></span><ul class="stream-item-comment-list" style="margin-top: -10px;"><li><div class="post-activity stream-item-comment-new"><div class="col-input"><textarea id="stream-post" style="" class="post textarea-white textarea-block textarea-autogrow" placeholder="' + tr('VIết gì đó...') + '" dir="auto"></textarea></div><div class="col-btn"><button id="stream-post-btn" class="btn btn-green" disabled="disabled">' + tr('Đăng') + '</button></div></div></li></ul></li>';
+					el.prepend(s);
+				}
+			}
+	}
+
+	var reg_list = [ new RegExp("^/activity/([0-9]+)\\?"), new RegExp("^/translation_tiers/([0-9]+)\\?"), new RegExp("^/users/(.+)$") ];
+
+	function start(e, r, o) {
+		if (!duo || !duo.user)
+			return;
+		if (o.url == "/diagnostics/js_error")
+			return;
+		if (duo.view != "profile")
+			return;
+
+		var a = null;
+		reg_list.forEach(function(x) {
+			if (!a)
+				a = x.exec(o.url);
+		});
+		if (a) {
+			var id = parseInt(a[1]);
+			if ((id && id == duo.user.id) || a[1] == duo.user.attributes.username)
+				show_form();
+		}
+	}
+
+	$(document).ajaxComplete(function(e, r, o) {
+		start(e, r, o);
+	});
+}
