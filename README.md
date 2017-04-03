@@ -45,7 +45,16 @@ ____________________________
 >>> + Fix something...
 
 > 0.17 (Note)
->> COMING SOON - 2/2017
+>> Use with Add-on (npDuo Blog & npDuo Lingot)
 >>> New:
 >>> + You can write on your wall!
->>> + Fix something...
+>>> + Fix "Give Lingot Fast"
+
+> 0.18 (Fashion)
+>> Coming up 5/2017
+>>> New:
+>>> + More beautiful
+>>> + Use with CSS
+
+> 0.19 (Cloudy)
+>> 6/2017?
