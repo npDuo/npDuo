@@ -3,7 +3,7 @@
 ______________________
 
 ## What is npDuo?
-npDuo (DuoTweakVN) is a useful userscript for Duolingo. The newest version is 0.16.1!
+npDuo (DuoTweakVN) is a useful userscript for Duolingo. The newest version is 0.17!
 _____________________________________
 ## How to install npDuo?
 + First, install this add-on:
@@ -39,7 +39,7 @@ ____________________________
 >>> + Fix something...
 
 > 0.16.1 (Mix)
->> I'm the newest version. Update or install now!
+>> Update or install now!
 >>> New:
 >>> + Remove our logo.
 >>> + Fix something...
@@ -58,3 +58,5 @@ ____________________________
 
 > 0.19 (Cloudy)
 >> 6/2017?
+>>> New:
+>>> + Shows stats!
