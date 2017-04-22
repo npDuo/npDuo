@@ -1,9 +1,9 @@
-# English Version
+# npDuo
 
 ______________________
 
 ## What is npDuo?
-npDuo is a useful userscript for Duolingo. The newest version is 0.17!
+npDuo is a useful userscript for Duolingo. The newest version is 0.18!
 _____________________________________
 ## How to install npDuo?
 + First, install this add-on:
