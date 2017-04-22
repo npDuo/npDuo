@@ -53,17 +53,37 @@ ____________________________
 > 0.18 (Fashion)
 >> Coming up 5/2017
 >>> New:
+>>> + Don't support npDuo Blog (Duolingo has removed Activity)
 >>> + More beautiful
 >>> + Use with CSS
 
 > 0.19 (Cloudy)
 >> #JUNE
 >>> New:
->>> + Shows stats!
+>>> + ~10 launcher for Duolingo!
 
 > 1.0 (Galaxy)
 >> Autumn is coming...
 >>> New:
->>> + Edit stats
+>>> + Shows stats!
 >>> + Special Launcher!
+
+===============
+
+**Note:** `a.b` is a mini update. `a.0` (`a`) is big update
+
+> 1.1 (N/A)
+
+> 1.2 (N/A)
+
+...
+
+> 1.5 (N/A)
+
+===============
+
+> 2.0 (Zara)
+>> Extension - Chrome/CocCoc
+>>> New:
+>>> + You can use new extension from npDuo (npDuo Extension)
 
