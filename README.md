@@ -51,22 +51,19 @@ ____________________________
 >>> + Fix "Give Lingot Fast"
 
 > 0.18 (Fashion)
->> Coming up 5/2017
 >>> New:
 >>> + Don't support npDuo Blog (Duolingo has removed Activity)
 >>> + More beautiful
 >>> + Use with CSS
 
-> 0.19 (Cloudy)
->> #JUNE
+> 1.0 (Autumn)
+>> Mid-Autumn is coming...
 >>> New:
->>> + ~10 launcher for Duolingo!
-
-> 1.0 (Galaxy)
->> Autumn is coming...
->>> New:
->>> + Shows stats!
+>>> + Change all images of skills!
 >>> + Special Launcher!
+>>> + Without using Stylish 
+>>> + Use npDuo Lingot in npDuo, don't need to use 2 extension
+>>> + Fix sth
 
 ===============
 
